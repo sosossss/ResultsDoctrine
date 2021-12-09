@@ -1,0 +1,75 @@
+# rutas.yml
+---
+ruta_raíz:
+    path:     /
+    controller: 'funcionHomePage'
+    methods:   [ GET ]
+
+
+
+
+
+ruta_user_list:
+    path:     /users
+    controller: 'funcionListadoUsuarios'
+    methods:   [ GET ]
+
+ruta_user_page:
+    path:     /user
+    controller: 'funcionUsuarioPage'
+    methods:
+        - GET
+
+ruta_user_create:
+    path:     /user
+    controller: 'functionCreateUsuario'
+    methods:
+        - POST
+
+ruta_user:
+    path:     /user/{name}
+    controller: 'funcionUsuario'
+    methods:
+        - GET
+        - DELETE
+
+ruta_user_modify:
+    path:     /user/{id}
+    controller: 'functionModifyUsuario'
+    methods:
+        - PUT
+
+
+
+
+
+
+ruta_result_list:
+    path: /results
+    controller: 'funcionListadoResults'
+    methods: [ GET ]
+
+ruta_result_page:
+    path:     /result
+    controller: 'funcionResultPage'
+    methods:
+        - GET
+
+ruta_result:
+    path:     /result/{id}
+    controller: 'funcionResult'
+    methods:
+        - GET
+        - DELETE
+
+ruta_result_create:
+    path:     /result
+    controller: 'functionCreateResult'
+    methods:
+        - POST
+
+ruta_result_modify:
+    path:     /result/{id}
+    controller: 'functionModifyResult'
+    methods:
+        - PUT
